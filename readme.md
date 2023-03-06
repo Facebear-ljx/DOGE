@@ -1,4 +1,4 @@
-# DOGE: When Data Geometry Meets Deep Function: Generalizing Offline Reinforcement Learning
+# DOGE: When Data Geometry Meets Deep Function: Generalizing Offline Reinforcement Learning (ICLR 2023)
 DOGE (https://openreview.net/forum?id=lMO7TC7cuuh) is an offline RL method designed from the perspective of generalization performance of deep function approximators. DOGE trains a state-conditioned distance function that can be readily plugged into standard actor-critic methods as a policy constraint. Simple yet elegant, our algorithm enjoys better generalization compared to state-of-the-art methods on D4RL benchmarks.
 
 #### Usage
