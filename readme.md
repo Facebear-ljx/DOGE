@@ -1,5 +1,5 @@
-# DOGE: Distance-sensitive Offline rl with better GEneralization
-DOGE (https://arxiv.org/abs/2205.11027) is an offline RL method designed from the perspective of generalization performance of deep function approximators. DOGE trains a state-conditioned distance function that can be readily plugged into standard actor-critic methods as a policy constraint. Simple yet elegant, our algorithm enjoys better generalization compared to state-of-the-art methods on D4RL benchmarks.
+# DOGE: When Data Geometry Meets Deep Function: Generalizing Offline Reinforcement Learning
+DOGE (https://openreview.net/forum?id=lMO7TC7cuuh) is an offline RL method designed from the perspective of generalization performance of deep function approximators. DOGE trains a state-conditioned distance function that can be readily plugged into standard actor-critic methods as a policy constraint. Simple yet elegant, our algorithm enjoys better generalization compared to state-of-the-art methods on D4RL benchmarks.
 
 #### Usage
 To install the dependencies, use 
@@ -35,11 +35,13 @@ to turn on the online syncronization.
 #### Bibtex
 
 ```
-@article{li2022distance,
-  title={Distance-Sensitive Offline Reinforcement Learning},
-  author={Li, Jianxiong and Zhan, Xianyuan and Xu, Haoran and Zhu, Xiangyu and Liu, Jingjing and Zhang, Ya-Qin},
-  journal={arXiv preprint arXiv:2205.11027},
-  year={2022}
+@inproceedings{
+li2023when,
+title={When Data Geometry Meets Deep Function: Generalizing Offline Reinforcement Learning},
+author={Jianxiong Li and Xianyuan Zhan and Haoran Xu and Xiangyu Zhu and Jingjing Liu and Ya-Qin Zhang},
+booktitle={The Eleventh International Conference on Learning Representations },
+year={2023},
+url={https://openreview.net/forum?id=lMO7TC7cuuh}
 }
 ```
 

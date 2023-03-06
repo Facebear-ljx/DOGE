@@ -287,12 +287,12 @@ class DOGE:
         logdir_name = f"./Model/{self.env_name}/{self.current_time}+{self.seed}/{self.total_it}+{reward}"
         os.makedirs(logdir_name)
 
-        # q_logdir_name = f"./Model/{self.env_name}/{self.current_time}+{self.seed}/{self.total_it}+{reward}/q.pth"
+        q_logdir_name = f"./Model/{self.env_name}/{self.current_time}+{self.seed}/{self.total_it}+{reward}/q.pth"
         a_logdir_name = f"./Model/{self.env_name}/{self.current_time}+{self.seed}/{self.total_it}+{reward}/actor.pth"
         # target_q_logdir_name = f"./Model/{self.env_name}/{self.current_time}+{self.seed}/{self.total_it}+{reward}/q_.pth"
         # target_a_logdir_name = f"./Model/{self.env_name}/{self.current_time}+{self.seed}/{self.total_it}+{reward}/actor_.pth"
         distance_logdir_name = f"./Model/{self.env_name}/{self.current_time}+{self.seed}/{self.total_it}+{reward}/distance.pth"
-        # torch.save(self.critic_net.state_dict(), q_logdir_name)
+        torch.save(self.critic_net.state_dict(), q_logdir_name)
         # torch.save(self.critic_target.state_dict(), target_q_logdir_name)
         torch.save(self.actor_net.state_dict(), a_logdir_name)
         # torch.save(self.actor_target.state_dict(), target_a_logdir_name)

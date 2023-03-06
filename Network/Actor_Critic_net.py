@@ -381,6 +381,10 @@ class Double_Critic(nn.Module):
         return q1, q2
 
     def Q1(self, state, action):
+        if isinstance(state, np.ndarray):
+            state = torch.tensor(state, dtype=torch.float).to(self.device)
+        if isinstance(action, np.ndarray):
+            action = torch.tensor(action, dtype=torch.float).to(self.device)
         sa = torch.cat([state, action], 1)
 
         q1 = F.relu(self.fc1(sa))
